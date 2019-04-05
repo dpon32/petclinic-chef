@@ -1,0 +1,19 @@
+json
+{
+"run_list": [
+"recipe[java]",
+"recipe[tomcat]",
+"recipe[petclinic]"
+],
+"default_attributes":{
+"java": {
+"jdk_version": "8",
+"install_flavor": "oracle",
+"accept_license_agreement": true,
+"jce_enabled": true,
+"oracle": {
+"accept_oracle_download_terms": true
+}
+}
+}
+}
